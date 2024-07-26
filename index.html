@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="contaiter">
+    <h1>Smart Sale machine</h1>
+    <!--     màn hình máy bán hàng -->
+    <div id="screenMachine">
+        <img src="https://www.allrecipes.com/thmb/y_uvjwXWAuD6T0RxaS19jFvZyFU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1205638014-2000-d0fbf9170f2d43eeb046f56eec65319c.jpg" id="fruit" />
+    </div>
+    <form>
+        <label>Select Product</label>     
+        <select id="nameProduct" onchange="ChangeProduct()">
+            <option value="1">Orange</option>
+            <option value="2">Apple</option>
+        </select>
+        
+        <label>quantity purchased</label>     
+        <select id="quantity" onchange="Payment()">
+            <option value="0.5">0.5 kg</option>
+            <option value="1">1 kg</option>
+            <option value="2">2 kg</option>
+        </select>
+        
+        <label>payment</label>  
+        <p id="total">your total payment</p>
+        
+        </select>        
+    </form>
+    
+
+</div>
+    
+
+
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
